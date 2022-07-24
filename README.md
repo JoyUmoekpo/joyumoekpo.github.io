@@ -23,8 +23,9 @@ npm install
 ## Technology
 1. HTML
 2. CSS
-3. Node modules
-4. ReactJS
+3. Bootstrap
+4. Node modules
+5. ReactJS
 
 ## License
 MIT License
