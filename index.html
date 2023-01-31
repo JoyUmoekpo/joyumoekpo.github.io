@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=\, initial-scale=1.0" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <script <!-- src="https://kit.fontawesome.com/dcd70f0f27.js" -->
+        crossorigin="anonymous"
+      >
+    </script>
   </head>
   <body>
     <div>
@@ -44,9 +48,141 @@
         </div>
       </div>
     </div>
-    <div id="about">
-      <h2 class="sub-title">About Me</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda illum illo, quasi maiores animi obcaecati eos necessitatibus voluptatibus ratione minus, inventore commodi? Excepturi dignissimos aspernatur vero libero itaque cupiditate animi?</p>
+    <!-- --------------------------------------- -->
+    <div id="about-container">
+      <h2 id="about" class="sub-title">About Me</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        illum illo, quasi maiores animi obcaecati eos necessitatibus
+        voluptatibus ratione minus, inventore commodi? Excepturi dignissimos
+        aspernatur vero libero itaque cupiditate animi?
+      </p>
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+          <li><span>Web Development</span><br />Web App Development</li>
+          <li><span>App Development</span><br />Building Andriod/iOS apps</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li><span>2022-2023</span><br />Perficient Bright Paths Fellow</li>
+          <li><span>2022</span><br />Software Engineer</li>
+          <li><span>2017-2020</span><br />English Department Student Worker</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul>
+          <li><span>2022-2023</span><br />Perficient Bright Paths Bootcamp</li>
+          <li><span>2020</span><br />Full Stack Development Fellowship</li>
+          <li><span>2016-2020</span><br />Trinity University</li>
+        </ul>
+      </div>
     </div>
+    <!-- --------------------------------------------------------->
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+          <div>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              earum nam vero incidunt in similique ex corrupti animi sint aut
+              explicabo, molestiae nulla officiis exercitationem consectetur,
+              ratione commodi? Deleniti, iure.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <!-- <i class="fa-solid fa-crop-simple"></i> -->
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              earum nam vero incidunt in similique ex corrupti animi sint aut
+              explicabo, molestiae nulla officiis exercitationem consectetur,
+              ratione commodi? Deleniti, iure.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <!-- <i class="fa-brands fa-app-store"></i> -->
+            <h2>App Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              earum nam vero incidunt in similique ex corrupti animi sint aut
+              explicabo, molestiae nulla officiis exercitationem consectetur,
+              ratione commodi? Deleniti, iure.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/work-1.png" alt="Project 1 Image" />
+            <div class="layer">
+              <h3>App</h3>
+              <p>
+                This application connects you to talented people around the
+                world
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work-2.png" alt="Project 2 Image" />
+            <div class="layer">
+              <h3>App</h3>
+              <p>
+                This application connects you to talented people around the
+                world
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work-3.png" alt="Project 3 Image" />
+            <div class="layer">
+              <h3>App</h3>
+              <p>
+                This application connects you to talented people around the
+                world
+              </p>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <script>
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      const opentab = tabname => {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      };
+    </script>
   </body>
 </html>
