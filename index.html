@@ -36,7 +36,7 @@
           <div>
             <p>Software Engineer</p>
             <h1>
-              Hello! My name is <span>Joy</span><br />
+              Hello! <br> My name is <span>Joy</span><br />
               Umoekpo!
             </h1>
           </div>
@@ -193,11 +193,12 @@
             <a href="assets/my-resume.pdf" download class="btn btn2">Download Resume</a>
           </div>
           <div class="contact-right">
-            <form>
+            <form name="submit-to-google-sheet">
               <input type="text" name="name" placeholder="Your Name" required>
               <input type="text" name="email" placeholder="Your Email" required>
               <textarea name="message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit" class="btn btn2">Submit</button>
+              <span id="sent"></span>
             </form>
             </div>
         </div>
@@ -222,6 +223,26 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       };
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzkediHazjMurBjx5lyDXx1DbYqf2UX2ZxRyTIDDFr7Us2fsyoaPgodfmZbZ0dF4hRx/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const sent = document.getElementById('sent');
+
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => 
+          {
+            sent.innerHTML = "Your message was sent successfully!"
+            setTimeout(function(){
+              sent.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
     </script>
   </body>
 </html>

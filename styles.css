@@ -65,10 +65,10 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 10%;
   font-size: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
 }
 
 .header-text h1 {
@@ -81,7 +81,7 @@ nav ul li a:hover::after {
 }
 
 .profile {
-  width: 175px;
+  width: 250px;
 }
 
 /* ------------------------------------------ */
@@ -387,4 +387,10 @@ form .btn2 {
   background: #262626;
   font-weight: 300;
   margin-top: 20px;
+}
+
+#sent {
+  color: #90EE90;
+  margin-top: -10px;
+  display: block;
 }
