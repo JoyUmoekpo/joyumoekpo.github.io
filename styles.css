@@ -295,3 +295,26 @@ nav ul li a:hover::after {
   background-color: #fff;
   margin-top: 5px;
 }
+
+/* -----------------------------------------*/
+#contact {
+  gap: 30px;
+}
+.contact-left {
+  flex-basis: 40%;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 30px;
+}
+
+#mail {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 15px;
+}
