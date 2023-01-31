@@ -95,6 +95,12 @@ nav ul li a:hover::after {
   padding: 30px;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 #about p {
   /* padding: 50px; */
   padding-top: 50px;
