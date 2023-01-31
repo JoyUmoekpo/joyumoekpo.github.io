@@ -21,13 +21,11 @@
             src="assets/logo.png"
             alt="Logo with my first and last name in a circle"
             class="logo"
-            width="150px"
-            height="100px"
           />
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#tech">Technologies</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -36,7 +34,7 @@
           <div>
             <p>Software Engineer</p>
             <h1>
-              Hello! <br> My name is <span>Joy</span><br />
+              Hello! <br> My name is <br><span>Joy</span>
               Umoekpo!
             </h1>
           </div>
@@ -52,123 +50,121 @@
     </div>
     <!-- --------------------------------------- -->
     <div id="about-container">
-      <h2 id="about" class="sub-title">About Me</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-        illum illo, quasi maiores animi obcaecati eos necessitatibus
-        voluptatibus ratione minus, inventore commodi? Excepturi dignissimos
-        aspernatur vero libero itaque cupiditate animi?
-      </p>
-      <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-        <p class="tab-links" onclick="opentab('education')">Education</p>
+      <h2 id="about" class="sub-title">All About Me</h2>
+      <section>
+        <p>I have a passion for creating things.</p>
+        <p>From short stories to art pieces, I love starting with a blank slate and making something new. I have been this way since I was young and often find interest in new creative pursuits.</p>
+        <p>So, it is no wonder that I fell in love with coding in 2020. With different programming languages and frameworks, coding has given me another way to create new projects and share them with the world. Coding has also given me the opportunity to pair my creative skills with my analytical knowledge to deliver these projects.</p>
+        <p>I am currently a full stack MERN developer and learning ReactJS principles. I have skills in HTML, CSS, and JavaScript with plans to learn more languages and frameworks in the future.</p>        
+      </section>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skill">
+          <ul>
+            <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+            <li><span>Web Development</span><br />Web App Development</li>
+            <li><span>App Development</span><br />Building Andriod/iOS apps</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>2022-2023</span><br />Perficient Bright Paths Fellow</li>
+            <li><span>2022</span><br />Software Engineer</li>
+            <li><span>2017-2020</span><br />Trinity University English Department Student Worker</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2022 - 2023</span><br />Perficient Bright Paths Bootcamp</li>
+            <li><span>2020</span><br />Full Stack Development Fellowship</li>
+            <li><span>2016 - 2020</span><br />Trinity University</li>
+          </ul>
+        </div>
       </div>
-      <div class="tab-contents active-tab" id="skills">
-        <ul>
-          <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
-          <li><span>Web Development</span><br />Web App Development</li>
-          <li><span>App Development</span><br />Building Andriod/iOS apps</li>
-        </ul>
-      </div>
-      <div class="tab-contents" id="experience">
-        <ul>
-          <li><span>2022-2023</span><br />Perficient Bright Paths Fellow</li>
-          <li><span>2022</span><br />Software Engineer</li>
-          <li><span>2017-2020</span><br />English Department Student Worker</li>
-        </ul>
-      </div>
-      <div class="tab-contents" id="education">
-        <ul>
-          <li><span>2022-2023</span><br />Perficient Bright Paths Bootcamp</li>
-          <li><span>2020</span><br />Full Stack Development Fellowship</li>
-          <li><span>2016-2020</span><br />Trinity University</li>
-        </ul>
-      </div>
-    </div>
-    <!-- --------------------------------------------------------->
-    <div id="services">
+    <!----------------------------------------------------------->
+    <div id="tech">
       <div class="container">
-        <h2 class="sub-title">My Services</h2>
+        <h2 class="sub-title">Technologies Used</h2>
         <div class="services-list">
           <div>
             <img src="./assets/crop-simple-solid.svg" alt="Crop SVG" width="50px">
-            <h2>UI/UX Design</h2>
+            <h2>Languages / Tools</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              earum nam vero incidunt in similique ex corrupti animi sint aut
-              explicabo, molestiae nulla officiis exercitationem consectetur,
-              ratione commodi? Deleniti, iure.
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>Python</li>
             </p>
-            <a href="#">Learn More</a>
           </div>
           <div>
             <img src="./assets/code-solid.svg" alt="Code SVG" width="50px"></img>
-            <h2>Web Design</h2>
+            <h2>Software / Frameworks</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              earum nam vero incidunt in similique ex corrupti animi sint aut
-              explicabo, molestiae nulla officiis exercitationem consectetur,
-              ratione commodi? Deleniti, iure.
+              <li>NodeJS</li>
+              <li>ExpressJS</li>
+              <li>jQuery</li>
+              <li>Handlebars.js</li>
+              <li>React</li>
+              <li>Angular</li>
+              <li>Bootstrap</li>
             </p>
-            <a href="#">Learn More</a>
           </div>
           <div>
             <img src="./assets/app-store.svg" alt="App Store SVG" width="50px">
-            <h2>App Design</h2>
+            <h2>Deployment Tools</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              earum nam vero incidunt in similique ex corrupti animi sint aut
-              explicabo, molestiae nulla officiis exercitationem consectetur,
-              ratione commodi? Deleniti, iure.
+              <li>AWS</li>
+              <li>Heroku</li>
+              <li>Netlify</li>
+              <li>Vercel</li>
             </p>
-            <a href="#">Learn More</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- ------------------------------------- -->
+    <!--------------------------------------- -->
 
     <div id="projects">
       <div class="container">
         <h2 class="sub-title">Projects</h2>
         <div class="work-list">
           <div class="work">
-            <img src="assets/work-1.png" alt="Project 1 Image" />
+            <img src="assets/habitspot.jpg" alt="Project 1 Image" class="habit"/>
             <div class="layer">
-              <h3>App</h3>
+              <h3>HabitSpot</h3>
               <p>
-                This application connects you to talented people around the
-                world
+                Habit Spot is a habit tracker journal application that allows users to track and journal their progress with their habits.
               </p>
-              <a href=""><img src="./assets/square-up-right-solid.svg" /></a>
+              <a href="https://www.loom.com/share/d709ddb3aed94b0a82ac63afd8aebf4d"  target="_blank"><img src="./assets/square-up-right-solid.svg" /></a>
             </div>
           </div>
           <div class="work">
-            <img src="assets/work-2.png" alt="Project 2 Image" />
+            <img src="assets/eatery.jpg" alt="Project 2 Image" class="project-image"/>
             <div class="layer">
-              <h3>App</h3>
+              <h3>DevMountain Eatery</h3>
               <p>
-                This application connects you to talented people around the
-                world
+                DevMountain Eatery is a React application that allows users to search for recipes utilizing the DevMountain recipe API. Users can also add their own custom recipes.
               </p>
-              <a href=""><img src="./assets/square-up-right-solid.svg"/></a>
+              <a href="https://devmountain-eatery.netlify.app/" target="_blank"><img src="./assets/square-up-right-solid.svg"/></a>
             </div>
           </div>
           <div class="work">
             <img src="assets/work-3.png" alt="Project 3 Image" />
             <div class="layer">
-              <h3>App</h3>
+              <h3>More to Come Soon</h3>
               <p>
-                This application connects you to talented people around the
-                world
+                Stay Tuned!
               </p>
-              <a href=""><img src="./assets/square-up-right-solid.svg"/></a>
+              <a href="https://github.com/JoyUmoekpo" target="_blank"><img src="./assets/square-up-right-solid.svg"/></a>
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <a href="https://github.com/JoyUmoekpo" class="btn">See More</a>
       </div>
     </div>
     <!------------------------------------------------ -->

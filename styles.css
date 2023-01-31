@@ -22,7 +22,10 @@ body {
 }
 
 .logo {
-  width: 140px;
+  margin-top: 3%;
+  margin-left: -90px;
+  width: 175px;
+  height: 125px;
 }
 
 /* a:visited {
@@ -40,6 +43,7 @@ nav ul li {
   display: inline-block;
   list-style: none;
   margin: 10px 20px;
+  /* margin: 10px 30px; */
 }
 
 nav ul li a {
@@ -68,7 +72,7 @@ nav ul li a:hover::after {
   margin-top: 10%;
   font-size: 30px;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 .header-text h1 {
@@ -95,6 +99,10 @@ nav ul li a:hover::after {
   padding: 30px;
 }
 
+section>p {
+  margin-bottom: 30px;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -115,6 +123,8 @@ nav ul li a:hover::after {
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab-links {
@@ -123,6 +133,7 @@ nav ul li a:hover::after {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+
 }
 
 .tab-links::after {
@@ -159,7 +170,7 @@ nav ul li a:hover::after {
 }
 
 /* ---------------------------------------------- */
-#services {
+#tech {
   padding: 30px 0;
 }
 
@@ -168,6 +179,7 @@ nav ul li a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .services-list div {
@@ -179,7 +191,7 @@ nav ul li a:hover::after {
   transition: background 0.5s, transform 0.5s;
 }
 
-.services-list div i {
+.services-list div img {
   font-size: 50px;
   margin-bottom: 30px;
 }
@@ -189,14 +201,6 @@ nav ul li a:hover::after {
   font-weight: 500;
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-.services-list div a {
-  text-decoration: none;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-  color: #fff;
 }
 
 .services-list div:hover {
@@ -264,6 +268,9 @@ nav ul li a:hover::after {
   text-align: center;
 }
 
+.habit {
+  height: 100%;
+}
 .work:hover img {
   transform: scale(1.1);
 }
@@ -361,7 +368,8 @@ form {
   margin-left: 50px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   border: 0;
   outline: none;
